@@ -1,0 +1,28 @@
+{
+  "name": "okdriver-cctv-analytics-platform",
+  "version": "1.0.0",
+  "description": "Integrated CCTV Monitoring, Video Analytics and Real-Time Alert Platform for okDriver & Gujarat Police Hackathon 2026",
+  "main": "server/index.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "test": "npm test --prefix server"
+  },
+  "keywords": [
+    "cctv",
+    "video-analytics",
+    "anpr",
+    "gis",
+    "real-time",
+    "okdriver",
+    "gujarat-police-hackathon"
+  ],
+  "author": "okDriver Full Stack Engineering Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
